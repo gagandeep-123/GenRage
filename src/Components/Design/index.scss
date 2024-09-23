@@ -1,0 +1,102 @@
+.design-wrapper{
+    background-color: #F7F7F7;
+        padding: 60px 150px;
+        display: flex;
+        position: relative;
+        height: 420px;
+
+    .left{
+        background-color: rgb(171 224 225);
+        width: 45%;
+        border-radius: 20px;
+
+        .card-wrapper{
+            background-image: url("../../../public/whitetee.png");
+            background-repeat: no-repeat;
+            background-size: 78%;
+            height: 404px;
+            position: relative;
+
+            .image4{
+                display: block;
+                position: absolute;
+                top: 40%;
+                left: 30%;
+            }
+            
+        }
+    }
+
+    .right{
+        background-color: white;
+        height: 180px;
+        padding: 60px 50px;
+        margin: auto;
+        right: 130px;
+        position: absolute;
+        width: 43%;
+        border-radius: 20px;
+        top: 120px;
+  
+        .heading{
+            font-weight: 700;
+            font-size: 30px;
+        }
+
+        p{
+            font-size: 16px;
+            color: grey;
+            text-align: left;
+            margin-top: 30px;
+        }
+    }
+        .right:hover{
+        background-color: #eff1f0;
+    }
+        
+}
+
+@media screen and (max-width: 767px) {
+    .design-wrapper{
+        flex-direction: column;
+        position: unset;
+        padding: 0 50px;
+
+        .left{
+            height: 250px;
+            width: 100%;
+            margin-top: 40px;
+            .card-wrapper{
+                height: 270px !important;
+                left: 30px;
+
+                .image4{
+                    top: 15% !important;
+                    left: 22% !important;
+
+                }
+            }
+
+            .slider-overlay{
+                height: 100%;
+            }
+        }
+        .right{
+            margin-top: 30px;
+            position: unset;
+            top: unset;
+            right: unset;
+            padding: 20px 30px;
+            p{
+                font-size: 13px;
+            }
+            .heading{
+                font-size: 18px;
+            }
+        }
+       .right{
+        width: 80%;
+       }
+    }
+    
+}

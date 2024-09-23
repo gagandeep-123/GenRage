@@ -1,0 +1,14 @@
+.frame{
+    background-color: #f7f7f782;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    .text{
+        padding: 0px 20px;
+        color: rgb(72, 82, 86);
+    }
+}

@@ -1,0 +1,120 @@
+.max-box{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 120px;
+    
+    width: 80%;
+    margin: 60px auto;
+    height: 550px;
+    align-items: center;
+    .image-container{
+        margin-top: 90px;
+        position: absolute;
+        margin-right: 200px;
+
+        img{
+            width: 289px;
+            border-radius: 10px;
+        }
+    }
+
+
+
+
+.sliding-text-container {
+  width: 100%;
+  overflow: hidden; /* Hides the text when it slides out of view */
+  white-space: nowrap;
+  position: relative;
+  display: flex;
+  margin-left: 100px;
+  border-radius: 10px;
+
+  .box{
+    display: flex;
+    background-color: rgb(162 203 203);
+    flex-direction: column;
+    border-radius: 16px;
+    width: 62%;
+    font-size: 16px;
+    padding: 20px;
+    font-weight: 700;
+
+    .content{
+        display: flex;
+    justify-content: space-between;
+    }
+  }
+      .footer-text{
+        font-size: 20px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 600;
+    }
+    .button{
+        border: none;
+    margin-top: 30px;
+    font-size: 14px;
+    padding: 15px 20px;
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: black;
+    }
+}
+
+.sliding-text {
+  display: inline-block;
+  font-size: 24px;
+  background-color: rgb(171, 224, 225);
+  width: 843px;
+  color: #333;
+  transform: translateX(100%); /* Initial position off-screen */
+  transition: transform 2s ease-out; /* Add transition for sliding */
+}
+
+.sliding-text.slide-in {
+  transform: translateX(0); /* Move to final position when slide-in class is added */
+  border-radius: 10px;
+  width: 71%;
+}
+}
+
+@media screen and (max-width: 767px) {
+    .max-box {
+        width: 90%  !important;
+        margin: auto;
+       
+        .image-container{
+            display: none;
+        }
+        .sliding-text-container{
+          margin-left: 0;
+          .footer-text{
+            font-size: 12px !important;
+
+
+          }
+        } 
+        .sliding-text-container .box{
+            width: 100% !important;
+        }
+    }
+    .sliding-text.slide-in{
+        width: 100% !important;
+
+        .div1{
+          width: 78% !important;
+          padding: 29px 37px !important;
+          .h2{
+            font-size: 27px !important;
+            margin-left: 4px !important;
+          }
+          .p1{
+            font-size: 14px !important;
+            margin-left: 7px !important;
+          }
+        }
+    }
+}
